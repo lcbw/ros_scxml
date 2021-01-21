@@ -43,7 +43,7 @@ jobs:
       - DOCKER_IMAGE="ros:noetic"
       - ADDITIONAL_DEBS="qt5-default libqt5scxml5-dev libqt5scxml5-bin qtdeclarative5-dev"
       - UPSTREAM_WORKSPACE="dependencies.rosinstall"
-      - TARGET_CMAKE_ARGS="-DSCXML_CORE_ENABLE_TESTING=ON"
+      - TARGET_CMAKE_ARGS="-DSCXML_CORE_BUILD_TESTS=ON -DSCXML_CORE_RUN_TESTS=ON"
       cache:
         directories:
           - $HOME/.ccache

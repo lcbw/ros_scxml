@@ -43,6 +43,6 @@ install(DIRECTORY include/
 ## Test ##
 ##########
 
-if(SCXML_CORE_ENABLE_TESTING)
+if(SCXML_CORE_BUILD_TESTS)
   add_subdirectory(test)
 endif()
